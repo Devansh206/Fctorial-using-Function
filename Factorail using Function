@@ -1,0 +1,18 @@
+#include<stdio.h>
+int fact(int);
+int main()  
+{
+ int facto,a;
+ printf("enter the number");
+ scanf("%d",&a);
+ facto=fact(a);
+ printf("%d factorial pf numbar is =%d",a,facto);
+ return 0;
+}
+int fact(int a)
+{
+ int i,n=1;
+ for(i=1;i<=a;i++)
+ n=n*i;
+ return (n);
+}
